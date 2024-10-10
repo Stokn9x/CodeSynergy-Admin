@@ -1,7 +1,7 @@
 ﻿namespace CodeSynergy_Admin.Enums
 {
-    public Enum ProjectType
-    {
+	public enum ProjectType
+	{
 		Web,
 		Mobile,
 		Desktop

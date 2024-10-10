@@ -11,13 +11,15 @@ namespace CodeSynergy_Admin.Models
 		public Guid Id { get; set; }
 		public string CompanyName { get; set; }
 		public List<Projects> CompanyProjects { get; set; }
+		public Company CompanyOwner { get; set; }
 		public string CompanyAddress { get; set; }
 
-		public Company(string companyName, List<Projects> companyProjects, string companyAddress)
+		public Company(string companyName, List<Projects> companyProjects, string companyAddress, Company companyOwner)
 		{
 			CompanyName = companyName;
 			CompanyProjects = companyProjects;
 			CompanyAddress = companyAddress;
+			CompanyOwner = companyOwner;
 		}
 
 		public void addProject(Projects project)
