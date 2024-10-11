@@ -13,6 +13,7 @@ namespace CodeSynergy_Admin.Models
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }
 
+
 		public Projects(string projectName, Company projectOwner, ProjectType projectType, ProjectStatus projectStatus, string description)
 		{
 			this.ProjectName = projectName;
